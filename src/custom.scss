@@ -1,0 +1,13 @@
+/* The following block can be included in a custom.scss */
+
+/* make the customizations */
+$theme-colors: (
+    "blackbg": #000000,
+    "specialFont": #ffffff,
+);
+
+
+/* import bootstrap to set changes */
+@import "node_modules/bootstrap/scss/bootstrap";
+
+/*fonts*/
