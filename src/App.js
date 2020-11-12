@@ -47,16 +47,40 @@ export default class Index extends Component {
         setTimeout(function(){that.setState({percentageLoader: "20%"})}, 1000);
         setTimeout(function(){that.setState({percentageLoader: "40%"})}, 2000);
         setTimeout(function(){that.setState({percentageLoader: "50%"})}, 3000);
-        setTimeout(function(){that.setState({percentageLoader: "85%", loaderCSS: "loaderCoverSheet2"});
-        document.body.style.overflowY = "scroll";}, 3800);
-        setTimeout(function(){that.setState({loader: false});}, 4000);
+        setTimeout(function(){that.setState({percentageLoader: "70%"})}, 4000);
+        setTimeout(function(){that.setState({percentageLoader: "90%", loaderCSS: "loaderCoverSheet2"});
+        document.body.style.overflowY = "scroll";}, 4800);
+        setTimeout(function(){that.setState({loader: false});}, 5000);
      
         }
 
   render () {
   return (
     <>
-
+    <Suspense>
+    { this.state.loader && (
+        <React.Fragment>
+        <div className={this.state.loaderCSS}>
+        <Container>
+        <Row>
+        <Col>
+        <div class="loader">
+        <div class="inner one"></div>
+        <div class="inner two"></div>
+        <div class="inner three"></div>
+        </div>
+        </Col>
+        </Row>
+        <Row>
+        <Col>
+        <span className="loaderText loaderLight">Loading... {this.state.percentageLoader}</span>
+        </Col>
+        </Row>
+        </Container>
+        </div>
+        </React.Fragment>
+      )}
+    </Suspense>
 
     <Container fluid className={this.state.bodyLoaderCSS}>
       <Row>
