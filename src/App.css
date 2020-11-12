@@ -59,12 +59,22 @@ background-size: 300%;
 }
 
 .limitHeightVideo {
-  height: 30vh !important;
+  height: 40vh !important;
 }
 
 .whiteHRLINE {
   background-color: #C0C0C0 !important;
   height: .1vh !important;
+}
+
+.VideoCube {
+  margin-top: -3vh;
+  width: 50%;
+}
+
+.VideoCoin {
+  margin-bottom: -3vh;
+  width: 65%;
 }
 
 .cardFontMain {
@@ -111,7 +121,9 @@ background-size: 300%;
     width: 100%;
     
 }
-
+    .Headline {
+        font-size: 3.5vh !important;
+    }
 
     .Subtitle {
         font-size: 1.75vh !important;
@@ -125,9 +137,6 @@ background-size: 300%;
         margin-top: -5% !important;
     }
 
-    .Headline {
-        font-size: 3.5vh !important;
-    }
 
   .loading-text span {
     display: inline-block;
@@ -374,3 +383,154 @@ background-size: 300%;
               filter: blur(3px);
     }
   }
+
+
+
+  @media screen and (min-width: 760px) and (max-width: 1367px) {
+        .headlineFont {
+                letter-spacing: .5vh;
+                font-size: 3vh !important;
+                margin-top: 0vh !important;
+                margin-left: 2vh !important;
+        }
+
+        .limitHeightVideo {
+                height: 30vh !important;
+        }
+
+        .VideoCube {
+                margin-top: -2vh;
+                width: 100%;
+        }
+
+        .VideoCoin {
+                margin-bottom: -8vh !important;
+                width: 120%;
+                margin-left: -3vh !important;
+        }
+
+        .VideoTriangles {
+                margin-bottom: -8vh !important;
+                width: 90%;
+                margin-top: -2vh !important;
+        }
+
+        .mobileAdjustCoin {
+                margin-top: -4vh !important;
+        }
+
+        .whiteHRLINE {
+                background-color: #C0C0C0 !important;
+                height: .1vh !important;
+                margin-bottom: 3vh;
+        }
+              
+}
+
+@media screen and (min-width: 541px) and (max-width: 759px) {
+        .VideoCoin {
+                width: 70%;
+        }
+
+        .limitHeightVideo {
+                height: 45vh !important;
+        }
+}
+
+@media screen and (min-width: 381px) and (max-width: 540px) {
+        .headlineFont {
+                letter-spacing: .5vh;
+                font-size: 2vh !important;
+        }
+
+        .limitHeightVideo {
+                height: 37vh !important;
+        }
+
+        .VideoCube {
+                margin-top: -3vh;
+                width: 80%;
+        }
+
+        .VideoCoin {
+                width: 100%;
+                margin-left: 0vh !important;
+        }
+
+        .VideoTriangles {
+                width: 60%;
+        }
+
+        .mobileAdjustCoin {
+                margin-top: -4vh !important;
+        }
+}
+
+@media screen and (min-width: 310px) and (max-width: 380px) {
+        .limitHeightVideo {
+                height: 30vh !important;
+        }
+
+        .VideoCube {
+                margin-top: -3vh;
+                width: 80%;
+        }
+
+        .VideoCoin {
+                width: 100%;
+                margin-left: 0vh !important;
+        }
+
+        .VideoTriangles {
+                width: 60%;
+        }
+
+        .mobileAdjustCoin {
+                margin-top: -4vh !important;
+        }
+}
+
+@media screen and (min-width: 260px) and (max-width: 309px) {
+        .shareButtonSpacing {
+                width: 1.5vh;
+                height: 1.5vh;
+                margin-right: .1vh;
+        }
+
+        .headlineFont {
+                letter-spacing: .3vh;
+                font-size: .7vh !important;
+        }
+
+        .Headline {
+                font-size: 2vh !important;
+                margin-top: 2vh !important;
+        }
+        
+            .Subtitle {
+                font-size: 1vh !important;
+                margin-top: 3vh !important;
+        }
+
+        .limitHeightVideo {
+                height: 30vh !important;
+        }
+
+        .VideoCube {
+                margin-top: -3vh;
+                width: 100%;
+        }
+
+        .VideoCoin {
+                width: 100%;
+                margin-left: 0vh !important;
+        }
+
+        .VideoTriangles {
+                width: 80%;
+        }
+
+        .mobileAdjustCoin {
+                margin-top: -4vh !important;
+        }
+}

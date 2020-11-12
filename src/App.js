@@ -12,7 +12,7 @@ import {TelegramIcon, TwitterIcon} from "react-share";
 import bucc from './bucc.png';
 import triangles from './firstvideo.mp4';
 import coinVideo from './secondvideo.mp4';
-import cube from './thirdvideo2.mp4';
+import cube from './thirdvideo.mp4';
 
 /* BOOTSTRAP IMPORTS */
 //Elements
@@ -158,7 +158,7 @@ export default class Index extends Component {
       <Col md={3}>
       </Col>
       <Col>
-      <video className="Video" loop="true" autoplay="autoplay" muted>
+      <video className="VideoTriangles" width="40%" loop="true" autoplay="autoplay" muted>
         <source src={triangles} type="video/mp4" />
         Your browser does not support the video tag.
         </video>
@@ -213,7 +213,7 @@ export default class Index extends Component {
       <Col md={3}>
       </Col>
       <Col>
-      <video className="Video" loop="true" autoplay="autoplay" muted>
+      <video className="VideoCoin" loop="true" autoplay="autoplay" muted>
         <source src={coinVideo} type="video/mp4" />
         Your browser does not support the video tag.
         </video>
@@ -226,7 +226,7 @@ export default class Index extends Component {
         <Col md={8}>
         <Card variant="dark" bg="blackbg" className="text-center">
               <Card.Body>
-                <Card.Title className="cardFont cardSubtitle cardFontMain">The Most Secure Private Crypto in the World</Card.Title>
+                <Card.Title className="cardFont cardSubtitle cardFontMain mobileAdjustCoin">The Most Secure Private Crypto in the World</Card.Title>
                 <Card.Text className="cardBody">
                 <hr className="whiteHRLINE" />
                 <p className="cardFontMain">
@@ -270,7 +270,7 @@ export default class Index extends Component {
       <Col md={3}>
       </Col>
       <Col>
-      <video className="Video" width="30%" loop="true" autoplay="autoplay" muted>
+      <video className="VideoCube" loop="true" autoplay="autoplay" muted>
         <source src={cube} type="video/mp4" />
         Your browser does not support the video tag.
         </video>
