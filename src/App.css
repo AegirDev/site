@@ -17,8 +17,7 @@
 
 
 .space {
- margin-top: 25vh !important;
- margin-bottom: 15vh !important;
+ margin-top: 30vh !important;
 }
 
 .loaderLight {
@@ -33,20 +32,56 @@
         animation: font-shine 3s infinite linear;
       }
 
-.cardlineFont {
-letter-spacing: .5vh;
+.cardFont {
 font-family: 'Anton', sans-serif;
-margin-top: 2vh;
-font-size: 2vh !important;
 text-align: center;
-color: #C0C0C0;;  
+color: #C0C0C0;
+text-align: center;
+}
+
+.cardTitle {
+letter-spacing: 1vh;
+margin-top: 2vh;
+font-size: 5vh !important;
+}
+
+.cardSubtitle {
+letter-spacing: .2vh;
+font-size: 1.75vh !important;
+}
+
+.cardBody {
+color: #C0C0C0;
+background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ 
+}
+
+.limitHeightVideo {
+  height: 30vh !important;
+}
+
+.whiteHRLINE {
+  background-color: #C0C0C0 !important;
+  height: .1vh !important;
+}
+
+.cardFontMain {
+        transition: 10s;
+        text-align: center;
+        background: -webkit-linear-gradient(left, #C0C0C0 0%,#e5e5e5 24%,#D3D3D3 36%,#C0C0C0 46%,#C0C0C0 52%,#C0C0C0 58%,#cccccc 67%,#D3D3D3 100%);
+        animation: font-shine 20s infinite linear;
+        background-size: 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
 
 .headlineFont {
   letter-spacing: .5vh;
   font-family: 'Syne Mono', monospace;
   margin-top: 2vh;
-  font-size: 2vh !important;
+  font-size: 1vh !important;
   background: -webkit-linear-gradient(left, #C0C0C0 0%,#D3D3D3 24%,#D3D3D3 36%,#C0C0C0 46%,#C0C0C0 52%,#C0C0C0 58%,#C0C0C0 67%,#000000 100%);
   background-size: 300%;
   -webkit-background-clip: text;
@@ -56,44 +91,15 @@ color: #C0C0C0;;
   color: #C0C0C0;
   animation: font-shine 10s;
 }
+
+
   @keyframes font-shine {
     0% {background-position: 0% 0}
     100% {background-position: -100% 0}
   }
 
+
 /* MAIN DISPLAY */
-.Video {
-    z-index: 1;
-}
-
-.line-break {
-background-color: #C0C0C0 !important;
-margin-top: -5vh !important;
-margin-bottom: 5vh !important;
-animation: font-shine 10s;
-}
-
-/*
-.videoMainFont {
-    font-family: 'Syne Mono', monospace;
-    font-size: 2.5em !important;
-    font-weight: bold;
-    color: #ffffff;
-    z-index: 1000 !important;
-    margin-top: -10% !important;
-    position: absolute;
-}
-
-.videoSubtitleFont {
-    font-family: 'Syne Mono', monospace;
-    font-size: 2.5em !important;
-    font-weight: bold;
-    color: #C0C0C0;
-    z-index: 1000 !important;
-    margin-top: -40% !important;
-    position: absolute;
-}
-*/
 
 /* FRONT TEXT DISPLAY */
 
@@ -105,6 +111,7 @@ animation: font-shine 10s;
     width: 100%;
     
 }
+
 
     .Subtitle {
         font-size: 1.75vh !important;

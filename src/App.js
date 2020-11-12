@@ -9,7 +9,7 @@ import './loader.css';
 import {TelegramIcon, TwitterIcon} from "react-share";
 
 /* ELEMENTS IMPORTS */
-import bucc from './bucc2.png';
+import bucc from './bucc.png';
 import triangles from './firstvideo.mp4';
 import coinVideo from './secondvideo.mp4';
 import cube from './thirdvideo2.mp4';
@@ -33,7 +33,7 @@ export default class Index extends Component {
       loader: true,
       percentageLoader: "0%",
       visibility: "visible",
-      loaderCSS: "loaderCoverSheet",
+      loaderCSS: "loaderCoverSheet"
     }
     document.body.style.overflowY = "hidden";
   }
@@ -45,16 +45,18 @@ export default class Index extends Component {
         setupLoader = async () => {
         var that = this;
         setTimeout(function(){that.setState({percentageLoader: "20%"})}, 1000);
-        setTimeout(function(){that.setState({percentageLoader: "50%"})}, 2000);
+        setTimeout(function(){that.setState({percentageLoader: "40%"})}, 2000);
+        setTimeout(function(){that.setState({percentageLoader: "50%"})}, 3000);
         setTimeout(function(){that.setState({percentageLoader: "85%", loaderCSS: "loaderCoverSheet2"});
-        document.body.style.overflowY = "scroll";}, 2800);
-        setTimeout(function(){that.setState({loader: false});}, 3000);
+        document.body.style.overflowY = "scroll";}, 3800);
+        setTimeout(function(){that.setState({loader: false});}, 4000);
      
         }
 
   render () {
   return (
     <>
+
 
     <Container fluid className={this.state.bodyLoaderCSS}>
       <Row>
@@ -134,65 +136,178 @@ export default class Index extends Component {
           <span class="loading-text-words Subtitle">Y</span>
          </div>
       </Col>
+
       <Col md={2}>
       </Col>
       </Row>
+      
+
       <Row className="space">
-      <Col md={1}></Col>
-        <Col md={7}>
-        <span className="cardlineFont">Title</span>
-        </Col>
-        <Col md={3}>
-        <video className="Video" width="100%" loop="true" autoplay="autoplay" muted>
+      <Col md={3}>
+      </Col>
+      <Col>
+      <Card variant="dark" bg="blackbg" className="text-center">
+              <Card.Header className="cardFont cardTitle cardFontMain">Proof of Privacy</Card.Header>
+      </Card>
+      </Col>
+      <Col md={3}>
+      </Col>
+      </Row>
+
+      <Row className="limitHeightVideo text-center">
+      <Col md={3}>
+      </Col>
+      <Col>
+      <video className="Video" loop="true" autoplay="autoplay" muted>
         <source src={triangles} type="video/mp4" />
         Your browser does not support the video tag.
         </video>
-        </Col>
-        <Col md={1}></Col>
+      </Col>
+      <Col md={3}>
+      </Col>
       </Row>
-      <Row className="space">
-      <Col md={1}></Col>
-        <Col md={7}>
-            <Card>
-              <Card.Header>Featured</Card.Header>
-              <Card.Body bg="dark">
-                <Card.Title>Special title treatment</Card.Title>
-                <Card.Text>
-                  With supporting text below as a natural lead-in to additional content.
+      <Row>
+      <Col md={2}></Col>
+        <Col md={8}>
+        <Card variant="dark" bg="blackbg" className="text-center">
+              <Card.Body>
+                <Card.Title className="cardFont cardSubtitle cardFontMain">Further Transactions Increase Security</Card.Title>
+                <Card.Text className="cardBody">
+                <hr className="whiteHRLINE" />
+                <p className="cardFontMain">
+                 The more transactions there are on the Buccaneer V2 (BUCC) chain, the more complex and secure BUCC becomes. 
+                 As Ethereum scales BUCC will only become more integral and resistant to hacks and takedowns. Since BUCC is on 
+                 the ethereum chain, it can run on DEXs, be accepted by all ERC20 wallets and continue to scale. Since information 
+                 is attached to user addresses, it's privacy as you build it. You can send simple txs and enjoy a small layer of 
+                 privacy, most txs aren't shown across many tools.
+
+                 <br /><br />
+                 However, to remain truly untraceable you need to use the API, Bermuda. Bermuda is just one of many coming projects, 
+                 to continue to scale and accelerate BUCC's privacy protocol. As it currently stands, BUCC is completely uncrackable 
+                 and as time goes on and stronger and stronger computers and chain analysis tools come out, newer and more up to date 
+                 BUCC products will come out. Everything that is released has backwards compatibility and all you will ever need is the 
+                 token to use it for all future products.
+                </p>
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <hr className="whiteHRLINE" />
+                <Button variant="dark" href="https://buccaneerv2.web.app/" target="_blank">Visit Bermuda -- The API</Button>
               </Card.Body>
             </Card>
         </Col>
-        <Col md={3}>
-        <video className="Video" width="100%" loop="true" autoplay="autoplay" muted>
+        <Col md={2}></Col>
+      </Row>
+
+      <Row className="space">
+      <Col md={3}>
+      </Col>
+      <Col>
+      <Card variant="dark" bg="blackbg" className="text-center">
+              <Card.Header className="cardFont cardTitle cardFontMain">Data Burn</Card.Header>
+      </Card>
+      </Col>
+      <Col md={3}>
+      </Col>
+      </Row>
+
+      <Row className="limitHeightVideo text-center">
+      <Col md={3}>
+      </Col>
+      <Col>
+      <video className="Video" loop="true" autoplay="autoplay" muted>
         <source src={coinVideo} type="video/mp4" />
         Your browser does not support the video tag.
         </video>
-        </Col>
-        <Col md={1}></Col>
+      </Col>
+      <Col md={3}>
+      </Col>
       </Row>
-      <Row className="space">
-      <Col md={1}></Col>
-        <Col md={7}>
-            <Card variant="dark" bg="blackbg" className="text-center">
-              <Card.Header className="cardlineFont">Featured</Card.Header>
+      <Row>
+      <Col md={2}></Col>
+        <Col md={8}>
+        <Card variant="dark" bg="blackbg" className="text-center">
               <Card.Body>
-                <Card.Title>Special title treatment</Card.Title>
-                <Card.Text>
-                  With supporting text below as a natural lead-in to additional content.
+                <Card.Title className="cardFont cardSubtitle cardFontMain">The Most Secure Private Crypto in the World</Card.Title>
+                <Card.Text className="cardBody">
+                <hr className="whiteHRLINE" />
+                <p className="cardFontMain">
+                 Buccaneer V2 (BUCC) shreds older data, maintaining only a current drawable state for users to maintain their privacy. 
+                 With no user history to backtrace that resides contract side, a person would have to crack the BUCC code, use machine learning 
+                and then highlight a user and follow all their txs. Further privacy protocol implementations will require user key permissions,
+                 rendering even machine learning obsolete. Combined with new products coming out to secure tokens, including LP tokens, users 
+                 can earn farm and liquidity mining rewards and only have to remember a few phone number length numbers.
+                 <br /><br />
+                 These future products will come out in the next months. In the meantime, users can earn interest right now for holding BUCC, 
+                 through the farm. Purposefully set up to distribute BUCC supply and reward holders of the token, you can deposit ether and BUCC 
+                 to uniswap and earn continual farm rewards. As future products secure the value of BUCC and increase it's security, you can 
+                 retain your wealth and it's value through BUCC, privately. The farm is currently up and running and offers a stable rate of return 
+                 with 10 BUCC being emitted per day.
+                </p>
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <hr className="whiteHRLINE" />
+                <Button variant="dark" href="http://buccv2.web.app/" target="_blank">Visit Sargasso -- The Farm</Button>
               </Card.Body>
             </Card>
         </Col>
-        <Col md={3}>
-        <video className="Video" width="100%" loop="true" autoplay="autoplay" muted>
+        <Col md={2}></Col>
+      </Row>
+
+
+
+
+      <Row className="space">
+      <Col md={3}>
+      </Col>
+      <Col>
+      <Card variant="dark" bg="blackbg" className="text-center">
+              <Card.Header className="cardFont cardTitle cardFontMain">Infinite Mutability</Card.Header>
+      </Card>
+      </Col>
+      <Col md={3}>
+      </Col>
+      </Row>
+
+      <Row className="limitHeightVideo text-center">
+      <Col md={3}>
+      </Col>
+      <Col>
+      <video className="Video" width="30%" loop="true" autoplay="autoplay" muted>
         <source src={cube} type="video/mp4" />
         Your browser does not support the video tag.
         </video>
+      </Col>
+      <Col md={3}>
+      </Col>
+      </Row>
+      <Row>
+      <Col md={2}></Col>
+        <Col md={8}>
+            <Card variant="dark" bg="blackbg" className="text-center marginTop">
+              <Card.Body>
+                <Card.Title className="cardFont cardSubtitle cardFontMain">The Most Scalable Private Currency World-Wide</Card.Title>
+                <hr className="whiteHRLINE" />
+                <Card.Text className="cardBody">
+                <p className="cardFontMain">
+                 Buccaneer V2 (BUCC) is built on ethereum and thus allows further contracts to be built on top of it. Further
+                 privacy projects can be built with BUCC, expand it, mold it, tweak it and use the BUCC engine itself 
+                 for their own privacy needs. In fact, other standard tokens and ethereum itself can be masked through 
+                 tumbling using BUCC. Further projects can garner fees and pass those fees onto the farm to award interest 
+                 to those who hold BUCC. 
+                 <br /><br />
+                 You can in fact, use the BUCC tumbler right now, to tumble both ETH and ERC20 tokens for the cost of only one 
+                 BUCC per month as a subscription. This product works by using a key address or a third address which is granted 
+                 custodial privledges by the main or first address. 
+                 There is only one stipulation; addresses tumbled to, tumbling in and used as a key must have interacted with 
+                 the BUCC contract before. This is very simple to do, simply send an address zero BUCC from any address and have 
+                 them whitelisted into the contract and then, from then on and forever, that address will be whitelisted and can 
+                 use any and all BUCC products.
+                </p>
+                </Card.Text>
+                <hr className="whiteHRLINE" />
+                <Button variant="dark" href="http://buccv2.web.app/" target="_blank">Visit Havoc -- The Tumbler</Button>
+              </Card.Body>
+            </Card>
         </Col>
-        <Col md={1}></Col>
+        <Col md={2}></Col>
       </Row>
     </Container>
     </>
