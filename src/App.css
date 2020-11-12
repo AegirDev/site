@@ -384,6 +384,28 @@ background-size: 300%;
     }
   }
 
+  @media screen and (min-width: 1500px) and (max-width: 2200px) {
+        .limitHeightVideo {
+                height: 50vh !important;
+        }
+
+        .VideoCube {
+                width: 50%;
+                margin-top: -2vh;
+        }
+
+        .VideoCoin {
+                margin-bottom: -4vh !important;
+        }
+
+        .VideoTriangles {
+                width: 50%;
+                margin-top: -3vh;
+        }
+
+              
+}
+
 
 
   @media screen and (min-width: 760px) and (max-width: 1367px) {
