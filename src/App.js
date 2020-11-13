@@ -9,6 +9,7 @@ import './loader.css';
 import {TelegramIcon, TwitterIcon} from "react-share";
 
 /* ELEMENTS IMPORTS */
+import buccLogo from './buccCorner.png';
 import bucc from './bucc.png';
 import triangles from './firstvideo.mp4';
 import coinVideo from './secondvideo.mp4';
@@ -57,30 +58,6 @@ export default class Index extends Component {
   render () {
   return (
     <>
-    <Suspense>
-    { this.state.loader && (
-        <React.Fragment>
-        <div className={this.state.loaderCSS}>
-        <Container>
-        <Row>
-        <Col>
-        <div class="loader">
-        <div class="inner one"></div>
-        <div class="inner two"></div>
-        <div class="inner three"></div>
-        </div>
-        </Col>
-        </Row>
-        <Row>
-        <Col>
-        <span className="loaderText loaderLight">Loading... {this.state.percentageLoader}</span>
-        </Col>
-        </Row>
-        </Container>
-        </div>
-        </React.Fragment>
-      )}
-    </Suspense>
 
     <Container fluid className={this.state.bodyLoaderCSS}>
       <Row>
@@ -92,7 +69,7 @@ export default class Index extends Component {
           <Container>
                         <img
                         alt=""
-                        src="./buccgif2.gif"
+                        src={buccLogo}
                         className="d-inline-block align-top imageSize" />
                         <h3 className="headlineFont">Buccaneer V2</h3>
           </Container>
@@ -100,8 +77,8 @@ export default class Index extends Component {
           </Form>
           <Form>
           <Container>
-            <TelegramIcon className="shareButtonSpacing" round={true} />
-            <TwitterIcon className="shareButtonSpacing" round={true} />
+            <TelegramIcon href="https://t.me/BuccaneerV2" className="shareButtonSpacing" round={true} />
+            <TwitterIcon href="https://twitter.com/BuccaneerV2" className="shareButtonSpacing" round={true} />
           </Container>
           </Form>
           </Navbar>
@@ -119,20 +96,11 @@ export default class Index extends Component {
       <Row>
       <Col md={2}></Col>
       <Col md={8}>
-        <div class="loading-text HeadlineAdjustment">
-            <span class="loading-text-words Headline">B</span>
-            <span class="loading-text-words Headline">U</span>
-            <span class="loading-text-words Headline">C</span>
-            <span class="loading-text-words Headline">C</span>
-            <span class="loading-text-words Headline">A</span>
-            <span class="loading-text-words Headline">N</span>
-            <span class="loading-text-words Headline">E</span>
-            <span class="loading-text-words Headline">E</span>
-            <span class="loading-text-words Headline">R</span>
-            <span class="loading-text-words Headline">{' '}</span>
-            <span class="loading-text-words Headline">V</span>
-            <span class="loading-text-words Headline">2</span>
-        </div>
+      <div class="loading-text HeadlineAdjustment">
+      <span class="loading-text-words Headline">
+      BUCCANEER V2
+      </span>
+      </div>
         </Col>
         <Col md={2}>
         </Col>
@@ -141,27 +109,45 @@ export default class Index extends Component {
         <Col md={2}></Col>
         <Col md={8}>
         <div class="loading-text SubtitleAdjustment">
-          <span class="loading-text-words Subtitle">U</span>
-          <span class="loading-text-words Subtitle">N</span>
-          <span class="loading-text-words Subtitle">L</span>
-          <span class="loading-text-words Subtitle">I</span>
-          <span class="loading-text-words Subtitle">M</span>
-          <span class="loading-text-words Subtitle">I</span>
-          <span class="loading-text-words Subtitle">T</span>
-          <span class="loading-text-words Subtitle">E</span>
-          <span class="loading-text-words Subtitle">D</span>
-          <span class="loading-text-words Subtitle">{' '}</span>
-          <span class="loading-text-words Subtitle">P</span>
-          <span class="loading-text-words Subtitle">R</span>
-          <span class="loading-text-words Subtitle">I</span>
-          <span class="loading-text-words Subtitle">V</span>
-          <span class="loading-text-words Subtitle">A</span>
-          <span class="loading-text-words Subtitle">C</span>
-          <span class="loading-text-words Subtitle">Y</span>
-         </div>
+        <span class="loading-text-words Subtitle">
+        UNLIMITED PRIVACY
+        </span>
+        </div>
       </Col>
-
       <Col md={2}>
+      </Col>
+      </Row>
+
+      <Row>
+      <Col md={3}>
+      </Col>
+      <Col md={6}>
+      <Card variant="dark" bg="blackbg" className="text-center">
+      <Card.Body>
+                <Card.Text className="cardBody">
+                <hr className="whiteHRLINE" />
+                <p className="cardFontMain">
+                 Buccaneer V2 (BUCC) is a private token on Ethereum that is both a token and a private contract. It allows other 
+                 projects to scale off of it for privacy and currently has the most private transaction system on Ethereum and in, 
+                 fact the entire cryptocurrency realm. As future contracts come out that continue to scale BUCC's privacy potential 
+                 and get it more ingrained within the DeFi space, it will continue to grow in value and offer investors great returns 
+                 through liquidity farming. There are only 10 million tokens that will ever be made, with about .5% currently in 
+                 circulation right now.
+
+                 <br /><br />
+                 The contracts are currently not open source due to the fact that many copycats and attempted clones have been made off of 
+                 BUCC's reputation and technical success. After a market capitalization of 500 million is reached, BUCC will be made open-source. 
+                 Buccaneer V2 will continue to grow and release a steady stream of privacy related projects all on Ethereum and will seek to 
+                 dominate the inter-operability market as well through wrapped ethereum assets. So far, BUCC has already achieved what no other 
+                 privacy project has done, created actual private txs on ethereum. You can buy BUCC on uniswap. 
+                </p>
+                </Card.Text>
+                <hr className="whiteHRLINE" />
+                <Button variant="dark" href="https://info.uniswap.org/pair/0x7772612549f27aa49c83fa59ab726f4799e4ecdc" target="_blank">Visit Uniswap -- Get BUCC</Button>
+              </Card.Body>
+            </Card>
+      </Col>
+      <Col md={3}>
       </Col>
       </Row>
       
@@ -171,7 +157,7 @@ export default class Index extends Component {
       </Col>
       <Col>
       <Card variant="dark" bg="blackbg" className="text-center">
-              <Card.Header className="cardFont cardTitle cardFontMain">Proof of Privacy</Card.Header>
+              <Card.Header className="cardFont cardTitle cardFontMain">Inter-Locking Contracts</Card.Header>
       </Card>
       </Col>
       <Col md={3}>
@@ -283,7 +269,7 @@ export default class Index extends Component {
       </Col>
       <Col>
       <Card variant="dark" bg="blackbg" className="text-center">
-              <Card.Header className="cardFont cardTitle cardFontMain">Infinite Mutability</Card.Header>
+              <Card.Header className="cardFont cardTitle cardFontMain">Truly Scalable</Card.Header>
       </Card>
       </Col>
       <Col md={3}>
@@ -307,7 +293,7 @@ export default class Index extends Component {
         <Col md={8}>
             <Card variant="dark" bg="blackbg" className="text-center marginTop">
               <Card.Body>
-                <Card.Title className="cardFont cardSubtitle cardFontMain">The Most Scalable Private Currency World-Wide</Card.Title>
+                <Card.Title className="cardFont cardSubtitle cardFontMain mobileAdjustCube">The Most Scalable Private Currency World-Wide</Card.Title>
                 <hr className="whiteHRLINE" />
                 <Card.Text className="cardBody">
                 <p className="cardFontMain">

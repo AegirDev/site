@@ -77,6 +77,14 @@ background-size: 300%;
   width: 65%;
 }
 
+.mobileAdjustCoin {
+        margin-top: -12vh !important;
+}
+
+.mobileAdjustCube {
+        margin-top: -12vh !important;
+}
+
 .cardFontMain {
         transition: 10s;
         text-align: center;
@@ -91,7 +99,7 @@ background-size: 300%;
   letter-spacing: .5vh;
   font-family: 'Syne Mono', monospace;
   margin-top: 2vh;
-  font-size: 1vh !important;
+  font-size: 2.5vh !important;
   background: -webkit-linear-gradient(left, #C0C0C0 0%,#D3D3D3 24%,#D3D3D3 36%,#C0C0C0 46%,#C0C0C0 52%,#C0C0C0 58%,#C0C0C0 67%,#000000 100%);
   background-size: 300%;
   -webkit-background-clip: text;
@@ -123,10 +131,12 @@ background-size: 300%;
 }
     .Headline {
         font-size: 3.5vh !important;
+        letter-spacing: .5vh;
     }
 
     .Subtitle {
         font-size: 1.75vh !important;
+        letter-spacing: .3vh;
     }
 
     .HeadlineAdjustment {
@@ -364,23 +374,23 @@ background-size: 300%;
 
   @-webkit-keyframes blur-text {
     0% {
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
+      -webkit-filter: opacity(0px);
+              filter: opacity(0px);
     }
     100% {
-      -webkit-filter: blur(3px);
-              filter: blur(3px);
+      -webkit-filter: opacity(10px);
+              filter: opacity(10px);
     }
   }
   
   @keyframes blur-text {
     0% {
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
+      -webkit-filter: opacity(0px);
+              filter: opacity(0px);
     }
     100% {
-      -webkit-filter: blur(3px);
-              filter: blur(3px);
+      -webkit-filter: opacity(10px);
+              filter: opacity(10px);
     }
   }
 
@@ -411,9 +421,13 @@ background-size: 300%;
   @media screen and (min-width: 760px) and (max-width: 1367px) {
         .headlineFont {
                 letter-spacing: .5vh;
-                font-size: 3vh !important;
-                margin-top: 0vh !important;
+                font-size: 2vh !important;
+                margin-top: .3vh !important;
                 margin-left: 2vh !important;
+        }
+
+        .mobileAdjustCube {
+        margin-top: -6vh !important;
         }
 
         .limitHeightVideo {
@@ -422,18 +436,18 @@ background-size: 300%;
 
         .VideoCube {
                 margin-top: -2vh;
-                width: 100%;
+                width: 80%;
         }
 
         .VideoCoin {
                 margin-bottom: -8vh !important;
-                width: 120%;
-                margin-left: -3vh !important;
+                width: 100%;
+                margin-left: 0vh !important;
         }
 
         .VideoTriangles {
                 margin-bottom: -8vh !important;
-                width: 90%;
+                width: 100%;
                 margin-top: -2vh !important;
         }
 
@@ -460,9 +474,18 @@ background-size: 300%;
 }
 
 @media screen and (min-width: 381px) and (max-width: 540px) {
+        .mobileAdjustCube {
+                margin-top: 0vh !important;
+        }
+
+        .imageSize {
+                height: 2vh;
+                width: 2vh;
+        }
+
         .headlineFont {
                 letter-spacing: .5vh;
-                font-size: 2vh !important;
+                font-size: 1.75vh !important;
         }
 
         .limitHeightVideo {
@@ -471,7 +494,7 @@ background-size: 300%;
 
         .VideoCube {
                 margin-top: -3vh;
-                width: 80%;
+                width: 100%;
         }
 
         .VideoCoin {
@@ -480,7 +503,7 @@ background-size: 300%;
         }
 
         .VideoTriangles {
-                width: 60%;
+                width: 80%;
         }
 
         .mobileAdjustCoin {
@@ -489,6 +512,15 @@ background-size: 300%;
 }
 
 @media screen and (min-width: 310px) and (max-width: 380px) {
+        .mobileAdjustCube {
+                margin-top: 0vh !important;
+        }
+        
+        .imageSize {
+                height: 2vh;
+                width: 2vh;
+        }
+
         .limitHeightVideo {
                 height: 30vh !important;
         }
@@ -504,7 +536,7 @@ background-size: 300%;
         }
 
         .VideoTriangles {
-                width: 60%;
+                width: 80%;
         }
 
         .mobileAdjustCoin {
@@ -513,6 +545,11 @@ background-size: 300%;
 }
 
 @media screen and (min-width: 260px) and (max-width: 309px) {
+        .imageSize {
+                height: 1vh;
+                width: 1vh;
+        }
+
         .shareButtonSpacing {
                 width: 1.5vh;
                 height: 1.5vh;
