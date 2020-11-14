@@ -374,23 +374,23 @@ background-size: 300%;
 
   @-webkit-keyframes blur-text {
     0% {
-      -webkit-filter: opacity(0px);
-              filter: opacity(0px);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
     }
     100% {
-      -webkit-filter: opacity(10px);
-              filter: opacity(10px);
+      -webkit-filter: blur(1px);
+              filter: blur(1px);
     }
   }
   
   @keyframes blur-text {
     0% {
-      -webkit-filter: opacity(0px);
-              filter: opacity(0px);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
     }
     100% {
-      -webkit-filter: opacity(10px);
-              filter: opacity(10px);
+      -webkit-filter: blur(1px);
+              filter: blur(1px);
     }
   }
 

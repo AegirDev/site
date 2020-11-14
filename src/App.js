@@ -58,7 +58,32 @@ export default class Index extends Component {
   render () {
   return (
     <>
+<Suspense>
+    { this.state.loader && (
+        <React.Fragment>
+        <div className={this.state.loaderCSS}>
+        <Container>
+        <Row>
+        <Col>
+        <div class="loader">
+        <div class="inner one"></div>
+        <div class="inner two"></div>
+        <div class="inner three"></div>
+        </div>
+        </Col>
+        </Row>
+        <Row>
+        <Col>
+        <span className="loaderText loaderLight">Loading... {this.state.percentageLoader}</span>
+        </Col>
+        </Row>
+        </Container>
+        </div>
+        </React.Fragment>
+      )}
+    </Suspense>
 
+    
     <Container fluid className={this.state.bodyLoaderCSS}>
       <Row>
       <Col md={12}>
