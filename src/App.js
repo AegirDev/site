@@ -2,8 +2,10 @@
 import React, {Component, Suspense} from "react";
 
 import './App.css';
-import './main.scss';
+//import './main.scss';
 import './loader.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 //General Style Imports
 import {TelegramIcon, TwitterIcon} from "react-share";
@@ -148,7 +150,7 @@ export default class Index extends Component {
       </Col>
       <Col md={6}>
       <Card variant="dark" bg="blackbg" className="text-center">
-      <Card.Body>
+      <Card.Body className="adjustCardBody">
                 <Card.Text className="cardBody">
                 <hr className="whiteHRLINE" />
                 <p className="cardFontMain">
@@ -205,7 +207,7 @@ export default class Index extends Component {
       <Col md={2}></Col>
         <Col md={8}>
         <Card variant="dark" bg="blackbg" className="text-center">
-              <Card.Body>
+              <Card.Body className="adjustCardBody">
                 <Card.Title className="cardFont cardSubtitle cardFontMain">Further Transactions Increase Security</Card.Title>
                 <Card.Text className="cardBody">
                 <hr className="whiteHRLINE" />
@@ -260,7 +262,7 @@ export default class Index extends Component {
       <Col md={2}></Col>
         <Col md={8}>
         <Card variant="dark" bg="blackbg" className="text-center">
-              <Card.Body>
+              <Card.Body className="adjustCardBody">
                 <Card.Title className="cardFont cardSubtitle cardFontMain mobileAdjustCoin">The Most Secure Private Crypto in the World</Card.Title>
                 <Card.Text className="cardBody">
                 <hr className="whiteHRLINE" />
@@ -317,7 +319,7 @@ export default class Index extends Component {
       <Col md={2}></Col>
         <Col md={8}>
             <Card variant="dark" bg="blackbg" className="text-center marginTop">
-              <Card.Body>
+              <Card.Body className="adjustCardBody">
                 <Card.Title className="cardFont cardSubtitle cardFontMain mobileAdjustCube">The Most Scalable Private Currency World-Wide</Card.Title>
                 <hr className="whiteHRLINE" />
                 <Card.Text className="cardBody">

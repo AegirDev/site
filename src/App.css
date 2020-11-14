@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&display=swap');
 
 
+
 /* HEADER & NAVBAR */
 .imageSize {
  width: 3vh;
@@ -30,7 +31,7 @@
         -webkit-text-fill-color: transparent;
         transition: 3s;
         animation: font-shine 3s infinite linear;
-      }
+}
 
 .cardFont {
 font-family: 'Anton', sans-serif;
@@ -48,6 +49,10 @@ font-size: 5vh !important;
 .cardSubtitle {
 letter-spacing: .2vh;
 font-size: 1.75vh !important;
+}
+
+.adjustCardBody {
+        background-color: #000000 !important;
 }
 
 .cardBody {
