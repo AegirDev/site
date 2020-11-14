@@ -5,7 +5,8 @@ import './App.css';
 //import './main.scss';
 import './loader.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { AwesomeButton } from "react-awesome-button";
+import "react-awesome-button/dist/styles.css";
 
 //General Style Imports
 import {TelegramIcon, TwitterIcon} from "react-share";
@@ -104,8 +105,8 @@ export default class Index extends Component {
           </Form>
           <Form>
           <Container>
-            <TelegramIcon href="https://t.me/BuccaneerV2" className="shareButtonSpacing" round={true} />
-            <TwitterIcon href="https://twitter.com/BuccaneerV2" className="shareButtonSpacing" round={true} />
+          <a href="https://t.me/BuccaneerV2"><TelegramIcon className="shareButtonSpacing" round={true} /></a>
+            <a href="https://twitter.com/BuccaneerV2"><TwitterIcon className="shareButtonSpacing" round={true} /></a>
           </Container>
           </Form>
           </Navbar>
@@ -170,7 +171,7 @@ export default class Index extends Component {
                 </p>
                 </Card.Text>
                 <hr className="whiteHRLINE" />
-                <Button variant="dark" href="https://info.uniswap.org/pair/0x7772612549f27aa49c83fa59ab726f4799e4ecdc" target="_blank">Visit Uniswap -- Get BUCC</Button>
+                <AwesomeButton type="primary" href="https://info.uniswap.org/pair/0x7772612549f27aa49c83fa59ab726f4799e4ecdc" className="special">Visit Uniswap -- Get BUCC</AwesomeButton>
               </Card.Body>
             </Card>
       </Col>
@@ -183,7 +184,7 @@ export default class Index extends Component {
       <Col md={3}>
       </Col>
       <Col>
-      <Card variant="dark" bg="blackbg" className="text-center">
+      <Card variant="dark" bg="blackbg" className="text-center adjustCardBody">
               <Card.Header className="cardFont cardTitle cardFontMain">Inter-Locking Contracts</Card.Header>
       </Card>
       </Col>
@@ -227,7 +228,7 @@ export default class Index extends Component {
                 </p>
                 </Card.Text>
                 <hr className="whiteHRLINE" />
-                <Button variant="dark" href="https://buccaneerv2.web.app/" target="_blank">Visit Bermuda -- The API</Button>
+                <AwesomeButton type="primary" href="https://buccaneerv2.web.app/" className="special">Visit Bermuda -- The API</AwesomeButton>
               </Card.Body>
             </Card>
         </Col>
@@ -238,7 +239,7 @@ export default class Index extends Component {
       <Col md={3}>
       </Col>
       <Col>
-      <Card variant="dark" bg="blackbg" className="text-center">
+      <Card variant="dark" bg="blackbg" className="text-center adjustCardBody">
               <Card.Header className="cardFont cardTitle cardFontMain">Data Burn</Card.Header>
       </Card>
       </Col>
@@ -261,9 +262,9 @@ export default class Index extends Component {
       <Row>
       <Col md={2}></Col>
         <Col md={8}>
-        <Card variant="dark" bg="blackbg" className="text-center">
+        <Card variant="dark" bg="blackbg" className="text-center adjustcardborder">
               <Card.Body className="adjustCardBody">
-                <Card.Title className="cardFont cardSubtitle cardFontMain mobileAdjustCoin">The Most Secure Private Crypto in the World</Card.Title>
+                <Card.Title className="cardFont cardSubtitle cardFontMain">The Most Secure Private Crypto in the World</Card.Title>
                 <Card.Text className="cardBody">
                 <hr className="whiteHRLINE" />
                 <p className="cardFontMain">
@@ -281,7 +282,7 @@ export default class Index extends Component {
                 </p>
                 </Card.Text>
                 <hr className="whiteHRLINE" />
-                <Button variant="dark" href="http://buccv2.web.app/" target="_blank">Visit Sargasso -- The Farm</Button>
+                <AwesomeButton type="primary" href="http://buccv2.web.app/" className="special">Visit Sargasso -- The Farm</AwesomeButton>
               </Card.Body>
             </Card>
         </Col>
@@ -295,7 +296,7 @@ export default class Index extends Component {
       <Col md={3}>
       </Col>
       <Col>
-      <Card variant="dark" bg="blackbg" className="text-center">
+      <Card variant="dark" bg="blackbg" className="text-center adjustCardBody">
               <Card.Header className="cardFont cardTitle cardFontMain">Truly Scalable</Card.Header>
       </Card>
       </Col>
@@ -318,9 +319,9 @@ export default class Index extends Component {
       <Row>
       <Col md={2}></Col>
         <Col md={8}>
-            <Card variant="dark" bg="blackbg" className="text-center marginTop">
+            <Card variant="dark" bg="blackbg" className="text-center marginTop lastCard">
               <Card.Body className="adjustCardBody">
-                <Card.Title className="cardFont cardSubtitle cardFontMain mobileAdjustCube">The Most Scalable Private Currency World-Wide</Card.Title>
+                <Card.Title className="cardFont cardSubtitle cardFontMain">The Most Scalable Private Currency World-Wide</Card.Title>
                 <hr className="whiteHRLINE" />
                 <Card.Text className="cardBody">
                 <p className="cardFontMain">
@@ -340,7 +341,7 @@ export default class Index extends Component {
                 </p>
                 </Card.Text>
                 <hr className="whiteHRLINE" />
-                <Button variant="dark" href="http://buccv2.web.app/" target="_blank">Visit Havoc -- The Tumbler</Button>
+                <AwesomeButton type="primary" href="http://buccv2.web.app/" className="special">Visit Havoc -- The Tumbler</AwesomeButton>
               </Card.Body>
             </Card>
         </Col>
