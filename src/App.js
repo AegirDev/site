@@ -13,7 +13,7 @@ import twitter from './twitterLogo.png';
 import telegram from './telegramLogo.png';
 
 /* ELEMENTS IMPORTS */
-import buccLogo from './buccCorner.png';
+import buccLogo from './logo.svg';
 import bucc from './bucc.png';
 import triangles from './firstvideo.mp4';
 import coinVideo from './secondvideo.mp4';
@@ -117,7 +117,6 @@ export default class Index extends Component {
       <Row>
       <Col md={2}></Col>
       <Col md={8}>
-      <img src={bucc} width="100%"></img>
       </Col>
       <Col md={2}>
       </Col>

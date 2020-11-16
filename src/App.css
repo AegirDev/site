@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet');
 
 
 
@@ -34,7 +34,7 @@
 }
 
 .cardFont {
-font-family: 'Anton', sans-serif;
+font-family: 'Noto Sans', sans-serif;
 text-align: center;
 color: #C0C0C0;
 text-align: center;
@@ -105,11 +105,13 @@ background-size: 300%;
         background-size: 300%;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
 }
 
 .headlineFont {
   letter-spacing: .5vh;
-  font-family: 'Syne Mono', monospace;
+  font-family: 'Noto Sans', sans-serif;
   margin-top: 2vh;
   font-size: 2.5vh !important;
   background: -webkit-linear-gradient(left, #C0C0C0 0%,#D3D3D3 24%,#D3D3D3 36%,#C0C0C0 46%,#C0C0C0 52%,#C0C0C0 58%,#C0C0C0 67%,#000000 100%);
@@ -142,21 +144,44 @@ background-size: 300%;
     
 }
     .Headline {
-        font-size: 3.5vh !important;
-        letter-spacing: .5vh;
+        font-size: 5vw !important;
+        letter-spacing: .5vw;
+        background: -webkit-linear-gradient(left, #C0C0C0 0%,#D3D3D3 24%,#D3D3D3 36%,#C0C0C0 46%,#C0C0C0 52%,#C0C0C0 58%,#C0C0C0 67%,#000000 100%);
+        background-size: 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: 8s;
+        text-align: center;
+        color: #C0C0C0;
+        animation: font-shine 10s;
+        -webkit-text-fill-color: transparent;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
     }
 
     .Subtitle {
-        font-size: 1.75vh !important;
-        letter-spacing: .3vh;
+        font-size: 3vw !important;
+        letter-spacing: .3vw;
+        background: -webkit-linear-gradient(left, #C0C0C0 0%,#D3D3D3 24%,#D3D3D3 36%,#C0C0C0 46%,#C0C0C0 52%,#C0C0C0 58%,#C0C0C0 67%,#000000 100%);
+        background-size: 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: 8s;
+        text-align: center;
+        color: #C0C0C0;
+        animation: font-shine 10s;
+        -webkit-text-fill-color: transparent;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
     }
 
     .HeadlineAdjustment {
-        margin-top: -12% !important;
+        margin-top: 12% !important;
     }
 
     .SubtitleAdjustment {
-        margin-top: -5% !important;
+        margin-top: 5% !important;
+        margin-bottom: 5% !important;
     }
 
 
@@ -164,7 +189,7 @@ background-size: 300%;
     display: inline-block;
     margin: 0 5px;
     color: #C0C0C0;
-    font-family: 'Syne Mono', monospace;
+    font-family: 'Noto Sans', sans-serif;
   }
 
 
@@ -361,19 +386,19 @@ background-size: 300%;
 
         .VideoCube {
                 margin-top: -6vh;
-                width: 110%;
+                width: 100%;
                 margin-left: -2vh;
         }
 
         .VideoCoin {
                 margin-bottom: -8vh !important;
-                width: 140%;
+                width: 130%;
                 margin-left: -7vh !important;
         }
 
         .VideoTriangles {
                 margin-bottom: -8vh !important;
-                width: 100%;
+                width: 90%;
                 margin-top: -4vh !important;
         }
 
