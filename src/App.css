@@ -5,15 +5,17 @@
 
 /* HEADER & NAVBAR */
 .imageSize {
- width: 3vh;
- height: 3vh;
- margin-right: 1vh;
+        width: 90%;
 }
 
 .shareButtonSpacing {
   width: 2.5vh;
   height: 2.5vh;
   margin-right: .3vh;
+}
+
+.topviewSpace {
+margin-bottom: 5vw;
 }
 
 
@@ -41,16 +43,16 @@ text-align: center;
 }
 
 .cardTitle {
-letter-spacing: 1vh;
-margin-top: 2vh;
-font-size: 5vh !important;
+letter-spacing: 1vw;
+margin-top: 2vw;
+font-size: 5vw !important;
 background-color: #000000 !important;
 z-index: 50 !important;
 }
 
 .cardSubtitle {
 letter-spacing: .2vh;
-font-size: 1.75vh !important;
+font-size: 1.4vw !important;
 }
 
 .adjustCardBody {
@@ -97,32 +99,19 @@ background-size: 300%;
         margin-top: -12vh !important;
 }
 
+.paragraphBody {
+        font-size: 1.1vw !important;
+}
+
 .cardFontMain {
-        transition: 10s;
         text-align: center;
         background: -webkit-linear-gradient(left, #C0C0C0 0%,#e5e5e5 24%,#D3D3D3 36%,#C0C0C0 46%,#C0C0C0 52%,#C0C0C0 58%,#cccccc 67%,#D3D3D3 100%);
-        animation: font-shine 20s infinite linear;
-        background-size: 300%;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
 }
 
-.headlineFont {
-  letter-spacing: .5vh;
-  font-family: 'Noto Sans', sans-serif;
-  margin-top: 2vh;
-  font-size: 2.5vh !important;
-  background: -webkit-linear-gradient(left, #C0C0C0 0%,#D3D3D3 24%,#D3D3D3 36%,#C0C0C0 46%,#C0C0C0 52%,#C0C0C0 58%,#C0C0C0 67%,#000000 100%);
-  background-size: 300%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: 8s;
-  text-align: center;
-  color: #C0C0C0;
-  animation: font-shine 10s;
-}
 
 
   @keyframes font-shine {
@@ -145,184 +134,232 @@ background-size: 300%;
 }
     .Headline {
         font-size: 5vw !important;
-        letter-spacing: .5vw;
-        background: -webkit-linear-gradient(left, #C0C0C0 0%,#D3D3D3 24%,#D3D3D3 36%,#C0C0C0 46%,#C0C0C0 52%,#C0C0C0 58%,#C0C0C0 67%,#000000 100%);
-        background-size: 300%;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transition: 8s;
+        letter-spacing: .3vw;
         text-align: center;
         color: #C0C0C0;
-        animation: font-shine 10s;
-        -webkit-text-fill-color: transparent;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
     }
 
     .Subtitle {
-        font-size: 3vw !important;
-        letter-spacing: .3vw;
-        background: -webkit-linear-gradient(left, #C0C0C0 0%,#D3D3D3 24%,#D3D3D3 36%,#C0C0C0 46%,#C0C0C0 52%,#C0C0C0 58%,#C0C0C0 67%,#000000 100%);
-        background-size: 300%;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transition: 8s;
+        font-size: 1.75vw !important;
+        letter-spacing: .2vw;
         text-align: center;
         color: #C0C0C0;
-        animation: font-shine 10s;
-        -webkit-text-fill-color: transparent;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
     }
 
     .HeadlineAdjustment {
-        margin-top: 12% !important;
+        margin-top: 10vw !important;
     }
 
     .SubtitleAdjustment {
         margin-top: 5% !important;
-        margin-bottom: 5% !important;
     }
 
 
   .loading-text span {
-    display: inline-block;
-    margin: 0 5px;
     color: #C0C0C0;
     font-family: 'Noto Sans', sans-serif;
   }
 
 
   @media screen and (min-width: 3500px) and (max-width: 5400px) {
+        .paragraphBody {
+                font-size: .7vw !important;
+        }
+
+        .cardSubtitle {
+                font-size: 1.3vw !important;
+        }
+
         .limitHeightVideo {
-                height: 50vh !important;
+                height: 30vw !important;
+        }
+
+        .imageSize {
+                height: 20vw;
+                width: 20vw;
+                margin-top: 5vw;
         }
 
         .VideoCube {
-                width: 35%;
+                width: 80%;
+                margin-top: -5vw;
         }
 
         .VideoCoin {
-                margin-bottom: -4vh !important;
-                width: 50%;
+                margin-bottom: -6vw !important;
+                width: 100%;
         }
 
         .VideoTriangles {
-                width: 30%;
+                width: 70%;
+                margin-top: -3vw;
         }        
 }
 
 @media screen and (min-width: 3001px) and (max-width: 3499px) {
+        .paragraphBody {
+                font-size: .9vw !important;
+        }
+
+        .cardSubtitle {
+                font-size: 1.8vw !important;
+        }
+
         .limitHeightVideo {
-                height: 50vh !important;
+                height: 30vw !important;
+        }
+
+        .imageSize {
+                height: 20vw;
+                width: 20vw;
+                margin-top: 5vw;
         }
 
         .VideoCube {
-                width: 35%;
+                width: 80%;
+                margin-top: -5vw;
         }
 
         .VideoCoin {
-                margin-bottom: -4vh !important;
-                width: 50%;
+                margin-bottom: -4vw !important;
+                width: 100%;
         }
 
         .VideoTriangles {
-                width: 30%;
-        }        
+                width: 70%;
+                margin-top: -3vw;
+        }           
 }
 
   @media screen and (min-width: 2601px) and (max-width: 3000px) {
+        .paragraphBody {
+                font-size: .9vw !important;
+        }
+
+        .cardSubtitle {
+                font-size: 1.8vw !important;
+        }
+
         .limitHeightVideo {
-                height: 50vh !important;
+                height: 30vw !important;
+        }
+
+        .imageSize {
+                height: 20vw;
+                width: 20vw;
+                margin-top: 5vw;
         }
 
         .VideoCube {
-                width: 35%;
-                margin-top: -7vh;
+                width: 80%;
+                margin-top: -5vw;
         }
 
         .VideoCoin {
-                margin-bottom: -4vh !important;
-                width: 40%;
+                margin-bottom: -4vw !important;
+                width: 100%;
         }
 
         .VideoTriangles {
-                width: 30%;
-                margin-top: -6vh;
-        }        
+                width: 70%;
+                margin-top: -3vw;
+        }              
 }
 
   @media screen and (min-width: 2301px) and (max-width: 2600px) {
         .limitHeightVideo {
-                height: 50vh !important;
+                height: 30vw !important;
+        }
+
+        .imageSize {
+                height: 20vw;
+                width: 20vw;
+                margin-top: 5vw;
         }
 
         .VideoCube {
-                width: 40%;
-                margin-top: -10vh;
+                width: 80%;
+                margin-top: -5vw;
         }
 
         .VideoCoin {
-                margin-bottom: -4vh !important;
-                width: 50%;
+                margin-bottom: -4vw !important;
+                width: 100%;
         }
 
         .VideoTriangles {
-                width: 35%;
-                margin-top: -6vh;
+                width: 70%;
+                margin-top: -3vw;
         }        
 }
 
   @media screen and (min-width: 1801px) and (max-width: 2300px) {
         .limitHeightVideo {
-                height: 50vh !important;
+                height: 40vh !important;
         }
 
         .VideoCube {
-                width: 70%;
-                margin-top: -8vh;
-                margin-left: -1vh;
+                margin-top: -6vw;
+                width: 60%;
+                margin-bottom: 6vw;
+                margin-left: -2vw;
         }
 
         .VideoCoin {
-                margin-bottom: -4vh !important;
-                width: 90%;
+                margin-bottom: -8vw !important;
+                width: 70%;
+                margin-left: -1vw !important;
         }
 
         .VideoTriangles {
-                width: 60%;
-                margin-top: -6vh;
-        }        
+                margin-bottom: -8vw !important;
+                width: 50%;
+                margin-top: -4vw !important;
+        }
 }
 
   @media screen and (min-width: 1501px) and (max-width: 1800px) {
+        .paragraphBody {
+                font-size: 1.3vw !important;
+        }
+
+        .cardSubtitle {
+                font-size: 2vw !important;
+        }
+
         .limitHeightVideo {
-                height: 50vh !important;
+                height: 40vh !important;
         }
 
         .VideoCube {
-                width: 100%;
-                margin-top: 10vh !important;
+                margin-top: -6vw;
+                width: 90%;
+                margin-bottom: 6vw;
+                margin-left: -2vw;
         }
 
         .VideoCoin {
-                margin-bottom: -4vh !important;
+                margin-bottom: -8vw !important;
+                width: 110%;
+                margin-left: -1vw !important;
         }
 
         .VideoTriangles {
-                width: 50%;
-                margin-top: -3vh;
+                margin-bottom: -8vw !important;
+                width: 80%;
+                margin-top: -4vw !important;
         }
 
               
 }
 
 @media screen and (min-width: 1368px) and (max-width: 1500px) {
-        .headlineFont {
-                letter-spacing: .5vh;
-                font-size: 2vh !important;
-                margin-top: .3vh !important;
-                margin-left: 2vh !important;
+        .paragraphBody {
+                font-size: 2vw !important;
+        }
+
+        .cardSubtitle {
+                font-size: 3vw !important;
         }
 
         .mobileAdjustCube {
@@ -330,30 +367,30 @@ background-size: 300%;
         }
 
         .limitHeightVideo {
-                height: 30vh !important;
+                height: 30vw !important;
         }
 
         .VideoCube {
-                margin-top: -6vh;
-                width: 45%;
-                margin-bottom: 6vh;
-                margin-left: -2vh;
+                margin-top: -6vw;
+                width: 85%;
+                margin-bottom: 6vw;
+                margin-left: -2vw;
         }
 
         .VideoCoin {
-                margin-bottom: -8vh !important;
-                width: 60%;
-                margin-left: -1vh !important;
+                margin-bottom: -8vw !important;
+                width: 90%;
+                margin-left: -1vw !important;
         }
 
         .VideoTriangles {
-                margin-bottom: -8vh !important;
-                width: 40%;
-                margin-top: -4vh !important;
+                margin-bottom: -8vw !important;
+                width: 70%;
+                margin-top: -4vw !important;
         }
 
         .mobileAdjustCoin {
-                margin-top: -4vh !important;
+                margin-top: -4vw !important;
         }
 
         .whiteHRLINE {
@@ -365,19 +402,21 @@ background-size: 300%;
 }
 
 
-
-
-
   @media screen and (min-width: 760px) and (max-width: 1367px) {
-        .headlineFont {
-                letter-spacing: .5vh;
-                font-size: 2vh !important;
-                margin-top: .3vh !important;
-                margin-left: 2vh !important;
+        .paragraphBody {
+                font-size: 2vw !important;
+        }
+
+        .cardSubtitle {
+                font-size: 3vw !important;
         }
 
         .mobileAdjustCube {
         margin-top: -6vh !important;
+        }
+
+        .HeadlineAdjustment {
+                margin-top: 8vw !important;
         }
 
         .limitHeightVideo {
@@ -385,15 +424,15 @@ background-size: 300%;
         }
 
         .VideoCube {
-                margin-top: -6vh;
+                margin-top: -4vw;
                 width: 100%;
-                margin-left: -2vh;
+                margin-left: 0vw;
         }
 
         .VideoCoin {
-                margin-bottom: -8vh !important;
+                margin-bottom: -8vw !important;
                 width: 130%;
-                margin-left: -7vh !important;
+                margin-left: -7vw !important;
         }
 
         .VideoTriangles {
@@ -406,32 +445,77 @@ background-size: 300%;
                 margin-top: -4vh !important;
         }
 
-        .whiteHRLINE {
-                background-color: #C0C0C0 !important;
-                height: .1vh !important;
-                margin-bottom: 3vh;
-        }
-              
 }
 
 @media screen and (min-width: 541px) and (max-width: 759px) {
-        .VideoCoin {
-                width: 70%;
+
+        .paragraphBody {
+                font-size: 3vw !important;
         }
 
-        .limitHeightVideo {
-                height: 45vh !important;
+        .cardSubtitle {
+                font-size: 4vw !important;
         }
-}
 
-@media screen and (min-width: 500px) and (max-width: 540px) {
+        .cardTitle {
+                font-size: 6vw !important;
+        }
+
         .mobileAdjustCube {
                 margin-top: 0vh !important;
         }
 
         .imageSize {
-                height: 2vh;
-                width: 2vh;
+                height: 35vw;
+                width: 35vw;
+        }
+
+        .headlineFont {
+                letter-spacing: .5vh;
+                font-size: 1.75vh !important;
+        }
+
+        .limitHeightVideo {
+                height: 28vh !important;
+        }
+
+        .VideoCube {
+                width: 100%;
+        }
+
+        .VideoCoin {
+                width: 100%;
+                margin-left: 0vh !important;
+        }
+
+        .VideoTriangles {
+                width: 80%;
+                margin-top: -5vh !important;
+                margin-bottom: -10vh !important;
+        }
+
+        .mobileAdjustCoin {
+                margin-top: -4vh !important;
+        }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 540px) {
+        .paragraphBody {
+                font-size: 3vw !important;
+        }
+
+        .cardSubtitle {
+                font-size: 4vw !important;
+        }
+
+        .mobileAdjustCube {
+                margin-top: 0vh !important;
+        }
+
+        .imageSize {
+                height: 35vw;
+                width: 35vw;
         }
 
         .headlineFont {
@@ -465,13 +549,21 @@ background-size: 300%;
 }
 
 @media screen and (min-width: 381px) and (max-width: 480px) {
+        .paragraphBody {
+                font-size: 3vw !important;
+        }
+
+        .cardSubtitle {
+                font-size: 4vw !important;
+        }
+
         .mobileAdjustCube {
                 margin-top: 0vh !important;
         }
 
         .imageSize {
-                height: 2vh;
-                width: 2vh;
+                height: 35vw;
+                width: 35vw;
         }
 
         .headlineFont {
@@ -505,14 +597,24 @@ background-size: 300%;
 }
 
 @media screen and (min-width: 370px) and (max-width: 380px) {
+
+        .paragraphBody {
+                font-size: 3vw !important;
+        }
+
+        .cardSubtitle {
+                font-size: 4vw !important;
+        }
+
         .mobileAdjustCube {
                 margin-top: 0vh !important;
         }
         
         .imageSize {
-                height: 2vh;
-                width: 2vh;
+                height: 35vw;
+                width: 35vw;
         }
+
 
         .limitHeightVideo {
                 height: 30vh !important;
@@ -544,8 +646,8 @@ background-size: 300%;
         }
         
         .imageSize {
-                height: 2vh;
-                width: 2vh;
+                height: 25vh;
+                width: 25vh;
         }
 
         .limitHeightVideo {
@@ -577,9 +679,17 @@ background-size: 300%;
 }
 
 @media screen and (min-width: 260px) and (max-width: 309px) {
+        .paragraphBody {
+                font-size: 3vw !important;
+        }
+
+        .cardSubtitle {
+                font-size: 4vw !important;
+        }
+
         .imageSize {
-                height: 1vh;
-                width: 1vh;
+                height: 35vw;
+                width: 35vw;
         }
 
         .shareButtonSpacing {
