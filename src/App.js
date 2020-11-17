@@ -135,7 +135,7 @@ export default class Index extends Component {
           <Col>
           <div class="loading-text SubtitleAdjustment">
           <span class="loading-text-words Subtitle">
-          UNLIMITED PRIVACY
+          Welcome to Privacy
           </span>
           </div>
           </Col>
@@ -155,19 +155,11 @@ export default class Index extends Component {
                 <Card.Text className="cardBody">
                 <hr className="whiteHRLINE" />
                 <p className="cardFontMain">
-                 Buccaneer V2 is a private token on Ethereum that allows private native transactions in it's token BUCC, as well as allowing other 
-                 projects to scale off of it. BUCC currently has the most private transaction system send in crypto. As future contracts come out that 
-                 continue to scale BUCC's privacy potential, it will continue to grow in value and
-                 through liquidity farming all 10 million tokens will reach circulation.
-
-                 <br /><br />
-                 The contracts are currently not open source due to the fact that many copycats and attempted clones have been made off of 
-                 BUCC's reputation and technical success. After a market capitalization of 500 million is reached, BUCC will be made open-source. So far, BUCC has already achieved what no other 
-                 privacy project has done, in creating actual private sends on ethereum that break traces. 
+                What started as a currency that enabled traceless transactions is now growing into an ever-expanding ecosystem of privacy tools. Welcome to privacy. 
                 </p>
                 </Card.Text>
                 <hr className="whiteHRLINE" />
-                <AwesomeButton type="primary" href="https://info.uniswap.org/pair/0x7772612549f27aa49c83fa59ab726f4799e4ecdc" className="special">Visit Uniswap -- Get BUCC</AwesomeButton>
+                <AwesomeButton type="primary" href="https://info.uniswap.org/pair/0x7772612549f27aa49c83fa59ab726f4799e4ecdc" className="special">Uniswap</AwesomeButton>
               </Card.Body>
             </Card>
       </Col>
@@ -217,10 +209,10 @@ export default class Index extends Component {
                   <Col md={4}>
                   </Col>
                   <Col>
-                  <AwesomeButton type="primary" href="https://ipfs.io/ipfs/QmQfDJCw6X2cvgaA3sB3YnyJrjLSgJb1N5xzzC8iszr7Tw" className="special">View the White Paper</AwesomeButton>
+                  <AwesomeButton type="primary" href="https://ipfs.io/ipfs/QmQfDJCw6X2cvgaA3sB3YnyJrjLSgJb1N5xzzC8iszr7Tw" className="special">White Paper</AwesomeButton>
                   </Col>
                   <Col>
-                  <AwesomeButton type="primary" href="https://buccaneerv2.web.app/" className="special">Visit Bermuda -- The API</AwesomeButton>
+                  <AwesomeButton type="primary" href="https://buccaneerv2.web.app/" className="special">Bermuda</AwesomeButton>
                   </Col>
                   <Col md={4}>
                   </Col>
@@ -269,7 +261,7 @@ export default class Index extends Component {
                 </p>
                 </Card.Text>
                 <hr className="whiteHRLINE" />
-                <AwesomeButton type="primary" href="http://buccv2.web.app/" className="special">Visit Sargasso -- The Farm</AwesomeButton>
+                <AwesomeButton type="primary" href="http://buccv2.web.app/" className="special">Sargasso</AwesomeButton>
               </Card.Body>
             </Card>
         </Col>
@@ -315,7 +307,7 @@ export default class Index extends Component {
                 </p>
                 </Card.Text>
                 <hr className="whiteHRLINE" />
-                <AwesomeButton type="primary" href="http://buccv2.web.app/" className="special">Visit Havoc -- The Tumbler</AwesomeButton>
+                <AwesomeButton type="primary" href="http://buccv2.web.app/" className="special">Havoc</AwesomeButton>
               </Card.Body>
             </Card>
         </Col>
