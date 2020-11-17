@@ -184,10 +184,6 @@ export default class Index extends Component {
       <Col md={3}>
       </Col>
       <Col>
-      <video className="VideoTriangles" width="40%" loop="true" autoplay="autoplay" muted>
-        <source src={triangles} type="video/mp4" />
-        Your browser does not support the video tag.
-        </video>
       </Col>
       <Col md={3}>
       </Col>
@@ -241,10 +237,6 @@ export default class Index extends Component {
       <Col md={3}>
       </Col>
       <Col>
-      <video className="VideoCoin" loop="true" autoplay="autoplay" muted>
-        <source src={coinVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-        </video>
       </Col>
       <Col md={3}>
       </Col>
@@ -288,10 +280,6 @@ export default class Index extends Component {
       <Col md={3}>
       </Col>
       <Col>
-      <video className="VideoCube" loop="true" autoplay="autoplay" muted>
-        <source src={cube} type="video/mp4" />
-        Your browser does not support the video tag.
-        </video>
       </Col>
       <Col md={3}>
       </Col>
