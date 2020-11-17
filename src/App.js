@@ -180,7 +180,7 @@ export default class Index extends Component {
       </Col>
       </Row>
 
-      <Row className="limitHeightVideo text-center">
+      <Row className="text-center">
       <Col md={3}>
       </Col>
       <Col>
@@ -233,7 +233,7 @@ export default class Index extends Component {
       </Col>
       </Row>
 
-      <Row className="limitHeightVideo text-center">
+      <Row className="text-center">
       <Col md={3}>
       </Col>
       <Col>
@@ -276,7 +276,7 @@ export default class Index extends Component {
       </Col>
       </Row>
 
-      <Row className="limitHeightVideo text-center">
+      <Row className="text-center">
       <Col md={3}>
       </Col>
       <Col>
