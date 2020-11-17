@@ -135,7 +135,6 @@ export default class Index extends Component {
           <Col>
           <div class="loading-text SubtitleAdjustment">
           <span class="loading-text-words Subtitle">
-          Welcome to Privacy
           </span>
           </div>
           </Col>
@@ -155,11 +154,10 @@ export default class Index extends Component {
                 <Card.Text className="cardBody">
                 <hr className="whiteHRLINE" />
                 <p className="cardFontMain">
-                What started as a currency that enabled traceless transactions is now growing into an ever-expanding ecosystem of privacy tools. Welcome to privacy. 
+                What started as a currency that enabled traceless transactions is now growing into an ever-expanding ecosystem of privacy tools. Welcome to privacy.
                 </p>
                 </Card.Text>
                 <hr className="whiteHRLINE" />
-                <AwesomeButton type="primary" href="https://info.uniswap.org/pair/0x7772612549f27aa49c83fa59ab726f4799e4ecdc" className="special">Uniswap</AwesomeButton>
               </Card.Body>
             </Card>
       </Col>
@@ -193,17 +191,19 @@ export default class Index extends Component {
         <Col md={8}>
         <Card variant="dark" bg="blackbg" className="text-center">
               <Card.Body className="adjustCardBody">
-                <Card.Title className="cardFont cardSubtitle cardFontMain">Interoperable</Card.Title>
+                <Card.Title className="cardFont cardSubtitle cardFontMain"></Card.Title>
                 <Card.Text className="cardBody">
                 <hr className="whiteHRLINE" />
-                <p className="cardFontMain paragraphBody">Ethereum's first and only on-chain privacy currency. Unstoppable, immutable and interoperable, BUCC 
-                is the most powerful private cryptocurrency due to it's ability to power other privacy contracts. Read more about BUCC and how to use it's companion serverless API Bermuda for untraceable transactions here in the Whitepaper-Manual. 
+                <p className="cardFontMain paragraphBody">Ethereum's first and only on-chain privacy currency. Unstoppable, immutable and interoperable, BUCC is the most powerful private cryptocurrency due to it's ability to power other privacy contracts. Read more about BUCC and how to use it's companion serverless API Bermuda for untraceable transactions here in the Whitepaper-Manual.
                 </p>
                 </Card.Text>
                 <hr className="whiteHRLINE" />
                 <Container>
                   <Row>
-                  <Col md={4}>
+                  <Col md={3}>
+                  </Col>
+                  <Col>
+                  <AwesomeButton type="primary" href="https://info.uniswap.org/pair/0x7772612549f27aa49c83fa59ab726f4799e4ecdc" className="special">Uniswap</AwesomeButton>                  
                   </Col>
                   <Col>
                   <AwesomeButton type="primary" href="https://ipfs.io/ipfs/QmQfDJCw6X2cvgaA3sB3YnyJrjLSgJb1N5xzzC8iszr7Tw" className="special">White Paper</AwesomeButton>
@@ -211,7 +211,7 @@ export default class Index extends Component {
                   <Col>
                   <AwesomeButton type="primary" href="https://buccaneerv2.web.app/" className="special">Bermuda</AwesomeButton>
                   </Col>
-                  <Col md={4}>
+                  <Col md={3}>
                   </Col>
                   </Row>
                 </Container>
@@ -246,11 +246,11 @@ export default class Index extends Component {
         <Col md={8}>
         <Card variant="dark" bg="blackbg" className="text-center adjustcardborder">
               <Card.Body className="adjustCardBody">
-                <Card.Title className="cardFont cardSubtitle cardFontMain">Traces are Burned</Card.Title>
+                <Card.Title className="cardFont cardSubtitle cardFontMain"></Card.Title>
                 <Card.Text className="cardBody">
                 <hr className="whiteHRLINE" />
                 <p className="cardFontMain paragraphBody">
-                The world's first private farm. Designed and intended for the stable distribution of BUCC, Sargasso's activity, deposits and withdraws are completely private. Contractual information is overwritten and burned, leaving no traces through the private withdrawl. Detailed manual coming soon. Fully functional now. 
+                The world's first private farm. Designed and intended for the stable distribution of BUCC, Sargasso's activity, deposits and withdraws are completely private. Contractual information is overwritten and burned, leaving no traces through the private withdrawal. Detailed manual coming soon. Fully functional now.
                 </p>
                 </Card.Text>
                 <hr className="whiteHRLINE" />
@@ -289,7 +289,7 @@ export default class Index extends Component {
         <Col md={8}>
             <Card variant="dark" bg="blackbg" className="text-center marginTop lastCard">
               <Card.Body className="adjustCardBody">
-                <Card.Title className="cardFont cardSubtitle cardFontMain">Mutability</Card.Title>
+                <Card.Title className="cardFont cardSubtitle cardFontMain"></Card.Title>
                 <hr className="whiteHRLINE" />
                 <Card.Text className="cardBody">
                 <p className="cardFontMain paragraphBody">The world's first unstoppable ETH and ERC20 tumbler. Built on-chain with no auxiliary components, Havok wreaks it. Using BUCC's internal address randomizer and state mutability, the tumbler is a supercharged privacy scrambler for all ERC20 tokens and ETH. Detailed manual coming soon. Fully functional now.
@@ -297,6 +297,20 @@ export default class Index extends Component {
                 </Card.Text>
                 <hr className="whiteHRLINE" />
                 <AwesomeButton type="primary" href="http://buccv2.web.app/" className="special">Havoc</AwesomeButton>
+              </Card.Body>
+            </Card>
+        </Col>
+        <Col md={2}></Col>
+      </Row>
+
+      <Row>
+      <Col md={2}></Col>
+        <Col md={8}>
+            <Card variant="dark" bg="blackbg" className="text-center marginTop lastCard">
+              <Card.Body className="adjustCardBody">
+                <p className="cardFontMain paragraphBody">
+                Site under construction. Even more, coming soon.
+                </p>
               </Card.Body>
             </Card>
         </Col>
