@@ -288,7 +288,7 @@ export default class Index extends Component {
       <Row>
       <Col md={2}></Col>
         <Col md={8}>
-            <Card variant="dark" bg="blackbg" className="text-center marginTop">
+            <Card variant="dark" bg="blackbg" className="text-center marginTop lastCard">
               <Card.Body className="adjustCardBody">
                 <Card.Title className="cardFont cardSubtitle cardFontMain"></Card.Title>
                 <hr className="whiteHRLINE" />
