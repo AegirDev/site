@@ -135,6 +135,7 @@ export default class Index extends Component {
           <Col>
           <div class="loading-text SubtitleAdjustment">
           <span class="loading-text-words Subtitle">
+          Welcome to Privacy
           </span>
           </div>
           </Col>
