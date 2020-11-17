@@ -238,6 +238,10 @@ export default class Index extends Component {
       <Col md={3}>
       </Col>
       <Col>
+      <video className="VideoCoin" loop="true" autoplay="autoplay" muted>
+        <source src={coinVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+        </video>
       </Col>
       <Col md={3}>
       </Col>
@@ -277,7 +281,7 @@ export default class Index extends Component {
       </Col>
       </Row>
 
-      <Row className="text-center">
+      <Row className="text-center limitHeightVideo">
       <Col md={3}>
       </Col>
       <Col>
@@ -288,7 +292,7 @@ export default class Index extends Component {
       <Row>
       <Col md={2}></Col>
         <Col md={8}>
-            <Card variant="dark" bg="blackbg" className="text-center marginTop">
+            <Card variant="dark" bg="blackbg" className="text-center marginTop lastCard">
               <Card.Body className="adjustCardBody">
                 <Card.Title className="cardFont cardSubtitle cardFontMain"></Card.Title>
                 <hr className="whiteHRLINE" />
